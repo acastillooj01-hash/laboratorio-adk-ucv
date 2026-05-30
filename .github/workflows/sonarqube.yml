@@ -27,3 +27,7 @@ jobs:
         uses: SonarSource/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        with:
+          args: >
+            -Dsonar.projectKey=acastillooj01-hash_laboratorio-adk-ucv
+            -Dsonar.organization=acastillooj01-hash
