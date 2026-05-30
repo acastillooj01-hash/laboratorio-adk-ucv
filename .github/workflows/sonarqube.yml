@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: poetry install --no-root
 
-      - name: SonarQube Scan
+      - name: SonarCloud Scan
         uses: SonarSource/sonarqube-scan-action@master
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
